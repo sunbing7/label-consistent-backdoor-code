@@ -93,7 +93,7 @@ class DataPoisoningAttack:
         num_examples = len(labels)
 
         # Only consider the examples with a label in the filter
-        num_examples_after_filtering = np.asscalar(np.sum(np.isin(labels, apply_to_filter)))
+        num_examples_after_filtering = np.sum(np.isin(labels, apply_to_filter)).item()#np.asscalar(np.sum(np.isin(labels, apply_to_filter)))
 
         num_to_poison = round(num_examples_after_filtering * poisoning_proportion)
 
