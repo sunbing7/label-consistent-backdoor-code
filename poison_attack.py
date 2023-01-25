@@ -2,7 +2,7 @@
 Implementation of data poisoning methods
 """
 import numpy as np
-import tensorflow as tf
+#import tensorflow as tf
 
 class DataPoisoningAttack:
     def __init__(self, trigger, target_class, *, random_seed=None, reduced_amplitude=None):
@@ -12,7 +12,7 @@ class DataPoisoningAttack:
         """
         if random_seed is not None:
             np.random.seed(random_seed)
-            tf.set_random_seed(random_seed)
+            #tf.set_random_seed(random_seed)
 
         self.trigger_mask = [] # For overriding pixel values
         self.trigger_add_mask = [] # For adding or subtracting to pixel values
