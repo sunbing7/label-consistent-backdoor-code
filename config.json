@@ -29,9 +29,9 @@
 
   "_comment": "===== GENERATING POISONED DATASET CONFIGURATION =====",
   "poisoning_base_train_images": "fully_poisoned_training_datasets/two_300.npy",
-  "poisoning_proportion": 1.0,
+  "poisoning_proportion": 0.8,
   "poisoning_target_class": 0,
-  "poisoning_trigger": "bottom-right",
-  "poisoning_reduced_amplitude": null,
+  "poisoning_trigger": "all-corners",
+  "poisoning_reduced_amplitude": 0.0627,
   "poisoning_output_dir": "already_poisoned_dataset"
 }
